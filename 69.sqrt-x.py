@@ -11,6 +11,16 @@ class Solution(object):
         :type x: int
         :rtype: int
         """
-        
+        left = 1
+        right = x
+        while left <= right:
+            mid = (right+left)//2
+            p = mid*mid
+            if p < x:
+                left = mid+1
+            elif p > x:
+                right = mid-1
+            else:
+                return mid
+        return right
 # @lc code=end
-
