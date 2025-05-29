@@ -18,3 +18,4 @@ class Solution(object):
             if another_num in nums_dict:
                 return (nums_dict[another_num], i)
             nums_dict[num] = i
+# @lc code=end
